@@ -1,4 +1,7 @@
+import { useEffect } from 'react'
+
 function Accueil() {
+  useEffect(() => { document.title = 'Accueil - John Doe' }, [])
   return (
     <>
       <section id="accueil">

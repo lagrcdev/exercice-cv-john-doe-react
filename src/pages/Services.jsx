@@ -1,4 +1,7 @@
+import { useEffect } from 'react'
+
 function Services() {
+  useEffect(() => { document.title = 'Services - John Doe' }, [])
   return (
     <>
       <div className="image-banniere"></div>
