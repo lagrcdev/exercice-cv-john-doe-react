@@ -1,15 +1,14 @@
 # CV en ligne - John Doe (React)
 
-Site internet de présentation de John Doe, développeur web en formation au CEF, réalisé avec React et Vite.
+Site internet cv de John Doe.
 
 ## Prérequis
 
-- [Node.js](https://nodejs.org) version 18 ou supérieure
-- npm
+- Node.js version 18 ou supérieure
 
 ## Installation
 
-Cloner le dépôt puis installer les dépendances :
+Cloner le dépôt puis installer :
 
 ```bash
 npm install
@@ -21,7 +20,7 @@ npm install
 npm run dev
 ```
 
-Ouvrir ensuite [http://localhost:5173](http://localhost:5173) dans le navigateur.
+Ouvrir ensuite http://localhost:5173 dans le navigateur.
 
 ## Build de production
 
@@ -31,19 +30,10 @@ npm run build
 
 ## Technologies utilisées
 
-- [React](https://react.dev/) 19
-- [Vite](https://vite.dev/) 8
-- [React Router](https://reactrouter.com/) 7
-- [Bootstrap](https://getbootstrap.com/) 5.3
-- [Font Awesome](https://fontawesome.com/) 6.5
-- [Google Fonts - Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans)
+- React 19
+- Vite 8
+- React Router 7
+- Bootstrap 5.3
+- Font Awesome 6.5
+- Google Fonts - Nunito Sans
 
-## Pages
-
-- **Accueil** — Présentation, photo et compétences de John Doe
-- **Services** — Offre de services (UX Design, Développement web, SEO)
-- **Réalisations** — Portfolio avec 3 projets
-- **Blog** — 6 articles de blog
-- **Contact** — Formulaire de contact et coordonnées avec Google Maps
-- **Mentions légales** — Informations légales (non indexée)
-- **Profil GitHub** — Données du profil GitHub via l'API GitHub

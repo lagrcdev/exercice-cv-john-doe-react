@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
 
 function MentionsLegales() {
+  useEffect(() => { document.title = 'Mentions légales - John Doe' }, [])
+
   useEffect(() => {
     const meta = document.createElement('meta')
     meta.name = 'robots'

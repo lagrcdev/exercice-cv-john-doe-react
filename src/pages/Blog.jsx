@@ -1,4 +1,7 @@
+import { useEffect } from 'react'
+
 function Blog() {
+  useEffect(() => { document.title = 'Blog - John Doe' }, [])
   return (
     <>
       <div className="image-banniere"></div>

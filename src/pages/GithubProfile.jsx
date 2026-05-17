@@ -60,6 +60,8 @@ function GithubProfile() {
   const [chargement, setChargement] = useState(true)
   const [erreur, setErreur] = useState(null)
 
+  useEffect(() => { document.title = 'Profil GitHub - John Doe' }, [])
+
   useEffect(() => {
     fetch('https://api.github.com/users/github-john-doe')
       .then((res) => {
