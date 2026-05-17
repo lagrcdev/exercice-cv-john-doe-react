@@ -9,9 +9,9 @@ function Footer() {
             <h3><strong>John Doe</strong></h3>
             <p>40 rue Laure Diebold <br />69009 Lyon, France</p>
             <p>Téléphone : 06 20 30 40 50</p>
-            <a href="https://github.com" target="_blank" rel="nofollow noopener"><i className="fab fa-github"></i></a>
-            <a href="https://twitter.com" target="_blank" rel="nofollow noopener"><i className="fab fa-twitter"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="nofollow noopener"><i className="fab fa-linkedin"></i></a>
+            <a href="https://github.com/github-john-doe" target="_blank" rel="nofollow noopener"><i className="fab fa-github"></i></a>
+            <a href="https://twitter.com/johndoe" target="_blank" rel="nofollow noopener"><i className="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/johndoe" target="_blank" rel="nofollow noopener"><i className="fab fa-linkedin"></i></a>
           </div>
 
           <div className="col-md-3">

@@ -208,13 +208,6 @@ footer .fa-chevron-right {
     transition: color 0.3s ease;
 }
 
-#image-realisations {
-    background-image: url('/images/image-bannierre.png');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-}
-
 /* section réalisations */
 #realisations {
     padding: 80px 0;
