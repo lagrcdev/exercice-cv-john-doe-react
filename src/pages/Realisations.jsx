@@ -1,7 +1,11 @@
 import { useEffect } from 'react'
 
 function Realisations() {
-  useEffect(() => { document.title = 'Réalisations - John Doe' }, [])
+
+  useEffect(() => {
+    document.title = 'Réalisations - John Doe'
+  }, [])
+
   return (
     <>
       <div className="image-banniere"></div>

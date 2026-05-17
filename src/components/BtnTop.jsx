@@ -1,22 +1,21 @@
 import { useState, useEffect } from 'react'
 
 function BtnTop() {
+
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    function handleScroll() {
-      setVisible(window.scrollY > 300)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        setVisible(true)
+      } else {
+        setVisible(false)
+      }
+    })
   }, [])
 
   return (
-    <a
-      href="#"
-      id="btn-top"
-      style={{ display: visible ? 'flex' : 'none' }}
-    >
+    <a href="#" id="btn-top" style={{ display: visible ? 'flex' : 'none' }}>
       <i className="fas fa-chevron-up"></i>
     </a>
   )
