@@ -1,0 +1,273 @@
+body {
+    font-family: 'Nunito sans';
+    background-color: #EEE;
+    color: #444;
+}
+
+/* navbar */
+nav .nav-link {
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar .nav-link.active {
+    color: #0d6efd;
+}
+
+/* image de fond */
+#accueil {
+    background-image: url('/images/imagedefond.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#accueil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+#accueil h1, #accueil h2 {
+    color: white;
+}
+
+/* a propos */
+#apropos {
+    padding-top: 60px;
+    margin-bottom: 80px;
+}
+
+/* bloc avec ombre */
+.bloc {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.bloc .col-md-6 {
+    padding: 50px;
+}
+
+/* ligne sous titre */
+.ligne-sous-titre {
+    width: 100%;
+    height: 2px;
+    background-color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+/* barres de progression */
+.barre-html {
+    background-color: #dc3545;
+}
+
+.barre-css {
+    background-color: #0dcaf0;
+}
+
+.barre-js {
+    background-color: #ffc107;
+}
+
+.barre-php {
+    background-color: #1a5c2a;
+}
+
+.barre-react {
+    background-color: #0d6efd;
+}
+
+/* footer */
+footer {
+    background-color: #d5d5d5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer p {
+    margin-bottom: 2px;
+}
+
+footer .fab {
+    font-size: 2.5rem;
+    margin-right: 10px;
+    margin-top: 20px;
+    color: #393939;
+}
+
+footer h3 {
+    color: #1e1e1e;
+}
+
+footer a {
+    color: #444;
+    text-decoration: none;
+}
+
+footer .fa-chevron-right {
+    color: #0d6efd;
+}
+
+/* bouton retour en haut */
+#btn-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0d6efd;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#btn-top:hover {
+    background-color: #298eff;
+}
+
+.copyright {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* page services */
+
+.image-banniere {
+    background-image: url('/images/image-bannierre.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#services {
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+
+.ligne-titre-centre {
+    width: 230px;
+    height: 4px;
+    background-color: #0d6efd;
+    margin: 5px auto 0px auto;
+}
+
+#services p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#services h2 {
+    margin-bottom: 4px;
+}
+
+#services .bloc {
+    height: 100%;
+}
+
+#services .col-md-4 {
+    padding: 15px;
+}
+
+#services .fas {
+    color: #0d6efd;
+}
+
+#services .bloc:hover .fas {
+    color: #cde1f8;
+    transition: color 0.3s ease;
+}
+
+#image-realisations {
+    background-image: url('/images/image-bannierre.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+/* section réalisations */
+#realisations {
+    padding: 80px 0;
+}
+
+#realisations .card-body {
+    text-align: center;
+}
+
+#realisations .card {
+    height: 100%;
+}
+
+#realisations .btn {
+    background-color: white;
+    color: #0d6efd;
+    border: 2px solid #0d6efd;
+}
+
+/* section blog */
+#blog {
+    padding: 80px 0;
+}
+
+/* section mentions légales */
+#mentions-legales {
+    padding: 80px 0;
+}
+
+/* section contact */
+#contact {
+    background-image: url('/images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 105, 255, 0.5);
+}
+
+#contact .container {
+    position: relative;
+    z-index: 2;
+}
+
+#contact h4 {
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+#contact .col-md-6 p {
+    margin-bottom: 2px;
+}
+
+#contact iframe {
+    margin-top: 20px;
+}
