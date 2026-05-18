@@ -31,7 +31,7 @@ npm run build
 ## Technologies utilisées
 
 - React 19
-- Vite 8
+- Vite 5
 - React Router 7
 - Bootstrap 5.3
 - Font Awesome 6.5
