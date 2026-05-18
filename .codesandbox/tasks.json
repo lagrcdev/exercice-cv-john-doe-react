@@ -1,6 +1,10 @@
 {
   "setupTasks": [
     {
+      "name": "Use Node 22",
+      "command": "nvm install 22 && nvm use 22"
+    },
+    {
       "name": "Install dependencies",
       "command": "npm install"
     }
