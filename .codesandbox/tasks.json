@@ -1,12 +1,8 @@
 {
   "setupTasks": [
     {
-      "name": "Use Node 22",
-      "command": "nvm install 22 && nvm use 22"
-    },
-    {
-      "name": "Install dependencies",
-      "command": "npm install"
+      "name": "Clean and install",
+      "command": "rm -rf node_modules && npm install"
     }
   ],
   "tasks": {
