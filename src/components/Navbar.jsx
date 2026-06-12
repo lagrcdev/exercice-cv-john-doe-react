@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
 
 function Navbar() {
+  const [menuOuvert, setMenuOuvert] = useState(false)
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
       <div className="container">
@@ -8,33 +10,30 @@ function Navbar() {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu"
-          aria-controls="menu"
-          aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => setMenuOuvert(!menuOuvert)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="menu">
+        <div className={`navbar-collapse ${menuOuvert ? 'show' : 'collapse'}`} id="menu">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/" end>Accueil</NavLink>
+              <NavLink className="nav-link" to="/" end onClick={() => setMenuOuvert(false)}>Accueil</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/services">Services</NavLink>
+              <NavLink className="nav-link" to="/services" onClick={() => setMenuOuvert(false)}>Services</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/realisations">Réalisations</NavLink>
+              <NavLink className="nav-link" to="/realisations" onClick={() => setMenuOuvert(false)}>Réalisations</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/blog">Blog</NavLink>
+              <NavLink className="nav-link" to="/blog" onClick={() => setMenuOuvert(false)}>Blog</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">Contact</NavLink>
+              <NavLink className="nav-link" to="/contact" onClick={() => setMenuOuvert(false)}>Contact</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/github">GitHub</NavLink>
+              <NavLink className="nav-link" to="/github" onClick={() => setMenuOuvert(false)}>GitHub</NavLink>
             </li>
           </ul>
         </div>
